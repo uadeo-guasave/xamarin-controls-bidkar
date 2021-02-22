@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinControls.CommonControls">
+    <StackLayout>
+        <Button Text="Saludar" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Valor"
+                   VerticalOptions="Center"
+                   TextTransform="Uppercase"
+                   FontSize="16"/>
+            <Stepper Minimum="0" Maximum="100" Increment="5" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Visible" />
+            <Switch IsToggled="True" />
+        </StackLayout>
+        <Slider Minimum="0" Maximum="100" />
+        <DatePicker />
+        <TimePicker />
+        <Image Source="https://uadeo.mx/wp-content/uploads/2020/11/banner-tramites-1024x683.jpg" />
+        <Frame HasShadow="True" BorderColor="Red">
+            <BoxView Color="Aquamarine" WidthRequest="100" HeightRequest="100" />
+        </Frame>
+        <WebView Source="https://www.w3schools.com/" />
+    </StackLayout>
+</ContentPage>
